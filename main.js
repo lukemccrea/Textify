@@ -25,6 +25,6 @@ export function textify(url, scale, characters) {
     return(text);
   }
   
-  if(url.endsWith('.jpeg' || '.png' || '.webp' || '.svg' || '.gif' || '.pdf))
+  if(url.endsWith('.jpeg' || '.png' || '.webp' || '.svg' || '.gif' || '.pdf'))
   myImg.src = url;
 }
