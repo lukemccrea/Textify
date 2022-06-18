@@ -1,4 +1,7 @@
 export function textify(url, scale, characters) {
+  if(!characters){
+    characters = ['█', '▓', '▒', '░'];
+  }
   const myImg = new Image();
 
   myImg.crossOrigin = "Anonymous";
