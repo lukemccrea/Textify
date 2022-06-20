@@ -18,6 +18,6 @@ Now that you've imported the script, you can call the *textify* function passing
 
 ```javascript
 textify(imageUrl).then(text => {
-      display.innerHTML = text;
+      console.log(text) // "Textified" image
     })
 ```
