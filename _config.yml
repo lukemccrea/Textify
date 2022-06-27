@@ -1,3 +1,10 @@
 title: "Textify"
 remote_theme: just-the-docs/just-the-docs
 color_scheme: dark
+Navigation:
+- title: Home
+ url: /index.html
+- title: About
+url: http://xociety.co
+ - title: Contact
+url: /contact
