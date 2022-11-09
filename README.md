@@ -5,7 +5,7 @@ Textify is a Javascript library that converts your images into text!
 
 # How to Use
 
-## Step 1:
+## Step 1: Add Textify
       
 Download the `main.min.js` file from the main branch and add it to the root of your project.
 
@@ -25,3 +25,5 @@ textify(imageUrl).then(text => {
       console.log(text) // "Textified" image
     })
 ```
+      
+*Note: Textify makes use of the HTML canvas. Because of this, Textify only works within browsers and does not work in Node.js
