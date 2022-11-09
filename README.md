@@ -26,5 +26,5 @@ textify(imageUrl).then(text => {
     })
 ```
      
-      ---
+---
 *Note: Textify makes use of the HTML canvas. Because of this, Textify only works within browsers and does not work in Node.js*
