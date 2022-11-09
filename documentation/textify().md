@@ -4,7 +4,7 @@ parent: Documentation
 nav_order: 1
 ---
 
-# textify(url, scale, characters)
+# textify()
 
 Returns a promise that resolves with the "textified" image
 
