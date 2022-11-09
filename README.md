@@ -5,7 +5,9 @@ Textify is a Javascript library that converts your images into text!
 
 # How to Use
 
-## Step 1: Download the `main.min.js` file from the main branch and add it to the root of your project.
+## Step 1:
+      
+Download the `main.min.js` file from the main branch and add it to the root of your project.
 
 ## Step 2: Import Script
 
