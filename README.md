@@ -5,14 +5,16 @@ Textify is a Javascript library that converts your images into text!
 
 # How to Use
 
-## Step 1: Import Script
+## Step 1: Download the `main.min.js` file from the main branch and add it to the root of your project.
+
+## Step 2: Import Script
 
 Add the script tag to your document's head to import the main script.
 ```html
-<script src="https://raw.githubusercontent.com/lukemccrea/Textify/main/main.min.js"></script>
+<script src="main.min.js"></script>
 ```
 
-## Step 2: Execute Function
+## Step 3: Execute Function
 
 Now that you've imported the script, you can call the *textify* function passing the url for the image you want to use as the first argument.
 
