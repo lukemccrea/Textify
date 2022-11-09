@@ -1,5 +1,5 @@
 # Textify
-Textify is a Javascript library that converts your images into text!
+Textify is a Javascript library that converts your images into text! Textify is very minimal and is less than 1kb!
 
 <image src="https://github.com/lukemccrea/Textify/blob/main/documentation/textifyExample.png?raw=true">
 
