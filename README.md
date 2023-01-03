@@ -28,3 +28,7 @@ textify(imageUrl).then(text => {
      
 ---
 *Note: Textify makes use of the HTML canvas. Because of this, Textify only works within browsers and does not work in Node.js*
+
+# How to Fix Image Distortion
+
+If you try to display the textified image, you may get a distorted image. This is because all the characters do not have a height and width of the same value. In order to fix this, use square characters, or display the textified image using a font that makes all the characters have the same height and width.
