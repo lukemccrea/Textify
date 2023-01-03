@@ -20,7 +20,7 @@ const display = document.getElementById("display");
 const scaleInp = document.getElementById("scale");
 
 function imageToText() {
-  const [file] = imgInp.files
+  let [file] = imgInp.files
   if (file) {
     let imageUrl = URL.createObjectURL(file)
     textify(imageUrl, (scaleInp.value / 100)).then(text => {
@@ -30,6 +30,11 @@ function imageToText() {
   }
 }
   </script>
+  <style>
+    p {
+      font-family: monospace;
+    }
+  </style>
 </body>
 
 </html>
