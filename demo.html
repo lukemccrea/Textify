@@ -11,6 +11,7 @@
 <body>
   <input type="file" accept="image/*" id="imgInp">
   <input type="range" min="1" max="100" id="scale">
+  <input type="text" min="2" max="100" id="characters">
   <button onclick="imageToText()">Go</button>
   <p id="display">
   </p>
@@ -18,12 +19,13 @@
 const imgInp = document.getElementById("imgInp");
 const display = document.getElementById("display");
 const scaleInp = document.getElementById("scale");
+const characters = document.getElementById("characters");
 
 function imageToText() {
   let [file] = imgInp.files
   if (file) {
     let imageUrl = URL.createObjectURL(file)
-    textify(imageUrl, (scaleInp.value / 100)).then(text => {
+    textify(imageUrl, (scaleInp.value / 100), Array.from(characters.value).then(text => {
       display.innerHTML = text;
     })
 
