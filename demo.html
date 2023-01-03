@@ -13,8 +13,9 @@
   <input type="range" min="1" max="100" id="scale">
   <input type="text" min="2" max="100" id="characters">
   <button onclick="imageToText()">Go</button>
-  <p id="display">
-  </p>
+  <div id='container'>
+  <p id="display"></p>
+  </div>
   <script>
 const imgInp = document.getElementById("imgInp");
 const display = document.getElementById("display");
@@ -30,6 +31,23 @@ function imageToText() {
 
   }
 }
+    
+//Scale the p element to fit container
+// Get the container element
+const container = document.getElementById('container');
+
+// Measure the width of the container and the text
+const containerWidth = container.offsetWidth;
+const textWidth = display.offsetWidth;
+
+// Calculate the ratio of the container width to the text width
+const ratio = containerWidth / textWidth;
+
+// Set the font size and other styles of the text based on the ratio
+display.style.fontSize = (ratio * 100) + '%';
+display.style.lineHeight = (ratio * 100) + '%';
+display.style.letterSpacing = `calc(${(ratio * 100)}'%' / 2.5)`;
+
   </script>
   <style>
     p {
@@ -37,6 +55,13 @@ function imageToText() {
       font-size: 10px;
       letter-spacing: 4px;
       line-height: 10px;
+    }
+    
+    #container {
+      width: 80%;
+      min-height: 60%;
+      display: block;
+      margin: auto;
     }
   </style>
 </body>
