@@ -25,7 +25,7 @@ function imageToText() {
   let [file] = imgInp.files
   if (file) {
     let imageUrl = URL.createObjectURL(file)
-    textify(imageUrl, (scaleInp.value / 100), Array.from(characters.value).then(text => {
+    textify(imageUrl, (scaleInp.value / 100), Array.from(characters.value)).then(text => {
       display.innerHTML = text;
     })
 
