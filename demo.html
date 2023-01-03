@@ -28,23 +28,6 @@ function imageToText() {
     let imageUrl = URL.createObjectURL(file)
     textify(imageUrl, (scaleInp.value / 100)).then(text => {
       display.innerHTML = text.split('\n').join('<br>');
-      
-      //Scale the p element to fit container
-
-      // Measure the width of the container and the text
-      const containerWidth = container.offsetWidth;
-      const textWidth = display.scrollWidth;
-
-      // Calculate the ratio of the container width to the text width
-      const ratio = containerWidth / textWidth;
-
-      // Set the font size and other styles of the text based on the ratio
-      display.style.fontSize = (ratio * 100) + '%';
-      display.style.lineHeight = (ratio * 100) + '%';
-      display.style.letterSpacing = `calc(${(ratio * 100)}% / 2.5)`;
-      console.log(`calc(${(ratio * 100)}% / 2.5)`);
-    })
-
   }
 }
 
