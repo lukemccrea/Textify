@@ -19,13 +19,12 @@
 const imgInp = document.getElementById("imgInp");
 const display = document.getElementById("display");
 const scaleInp = document.getElementById("scale");
-const characters = document.getElementById("characters");
 
 function imageToText() {
   let [file] = imgInp.files
   if (file) {
     let imageUrl = URL.createObjectURL(file)
-    textify(imageUrl, (scaleInp.value / 100), Array.from(characters.value)).then(text => {
+    textify(imageUrl, (scaleInp.value / 100)).then(text => {
       display.innerHTML = text;
     })
 
