@@ -6,17 +6,27 @@ nav_order: 2
 # Getting Started
 
 ## Step 1: Add Textify
+
+You can add Textify to your site by downloading the file or using a cdn.
+
+### Download the File
       
 Download the `main.min.js` file from the main branch and add it to the root of your project.
 
-## Step 2: Import Script
-
-Add the script tag to your document's head to import the main script.
+Then add the script tag to your document's head to import the main script.
 ```html
 <script src="main.min.js"></script>
 ```
 
-## Step 3: Execute Function
+### Use a CDN
+
+Add the following script tag to your website
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/lukemccrea/Textify/main.min.js"> </script>
+```
+
+## Step 2: Execute Function
 
 Now that you've imported the script, you can call the *textify* function passing the url for the image you want to use as the first argument.
 
