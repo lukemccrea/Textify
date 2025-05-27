@@ -28,7 +28,7 @@ function imageToText() {
     let imageUrl = URL.createObjectURL(file)
     textify(imageUrl, (scaleInp.value / 100)).then(text => {
       display.innerHTML = text.split('\n').join('<br>');
-  }
+  });
 }
 
   </script>
