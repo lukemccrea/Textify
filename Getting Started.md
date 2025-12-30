@@ -25,6 +25,7 @@ Add the following script tag to your website
 ```html
 <script src="https://cdn.jsdelivr.net/gh/lukemccrea/Textify/main.min.js"> </script>
 ```
+*Note: Textify only works in the broswer and cannot be used in non-browser javascript runtimes like NodeJS, Bun, or Deno.*
 
 ## Step 2: Execute Function
 
