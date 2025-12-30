@@ -26,6 +26,8 @@ Add the following script tag to your website
 <script src="https://cdn.jsdelivr.net/gh/lukemccrea/Textify/main.min.js"> </script>
 ```
 
+*Textify only works in the browser and does not not work on non-browser javascript runtimes like Node JS, Deno, or Bun
+
 ## Step 2: Execute Function
 
 Now that you've imported the script, you can call the *textify* function passing the url for the image you want to use as the first argument.
